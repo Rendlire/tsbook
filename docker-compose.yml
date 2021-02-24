@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  app:
+    image: node:15-alpine3.13
+    container_name: mytsapp
+    ports:
+      - "3001:3000"
+    tty: true
+    working_dir: /mytsapp
+    volumes:
+      - .:/mytsapp
